@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+video, canvas {
+    width: 500px;
+    border-radius: 10px;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
