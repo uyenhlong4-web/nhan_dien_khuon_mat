@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHẬN_DIỆN_KHUÔN_MẶT</title>
+    <title>Face Detection & Crop</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Nhận diện khuôn mặt</h1>
-         <!-- Thư viện face-api -->
-    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
-
-    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
 
-<h1>Nhận diện khuôn mặt</h1>
+    <div class="app-container">
+        <h1>NHẬN DIỆN KHUÔN MẶT</h1>
 
-<div class="container">
-    <video id="video" autoplay muted></video>
-</div>
+        <div class="main-layout">
+            <div class="view-box">
+                <span class="label">Camera Trực Tiếp</span>
+                <div class="video-wrapper" id="video-container">
+                    <video id="video" width="640" height="480" autoplay muted></video>
+                </div>
+            </div>
 
+            <div class="arrow-divider">➡</div>
 
+            <div class="view-box">
+                <span class="label">Kết Quả Cắt</span>
+                <div class="crop-wrapper">
+                    <canvas id="face-crop-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="JavaScript.js"></script>
-    
 </body>
 </html>
